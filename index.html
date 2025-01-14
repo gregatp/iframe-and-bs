@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame test</title>
+</head>
+<body>
+<h1>iFrame test</h1>
+<iframe
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="600"
+        height="400"
+>
+</iframe>
+<script>
+    document.querySelector('iframe').contentDocument.write("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title>iFrame test content</title></head><body><p>iFrame paragraph</p></body></html>")
+</script>
+</body>
+</html>
