@@ -14,7 +14,8 @@
 >
 </iframe>
 <script>
-    document.querySelector('iframe').contentDocument.write("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title>iFrame test content</title></head><body><p>iFrame paragraph</p></body></html>")
+    document.querySelector('iframe').contentDocument.write("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title>iFrame test content</title></head><body><p>iFrame paragraph</p></body></html>");
+    document.querySelector('iframe').contentDocument.close();
 </script>
 </body>
 </html>
